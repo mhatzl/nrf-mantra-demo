@@ -1,0 +1,10 @@
+[target.thumbv7em-none-eabihf]
+runner = "embedded-runner run"
+linker = "flip-link" # adds stack overflow protection
+rustflags = [
+  "-C", "link-arg=-Tlink.x", # use the cortex-m-rt linker script
+  "-C", "link-arg=-Tdefmt.x", # defmt support
+]
+
+[build]
+target = "thumbv7em-none-eabihf"

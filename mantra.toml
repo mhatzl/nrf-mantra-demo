@@ -1,0 +1,12 @@
+[project]
+name = "nrf-mantra-demo"
+
+[[requirements]]
+root = "requirements.md"
+origin = "local"
+
+[[traces]]
+root = ""
+
+[coverage]
+files = ["coverage.json"]
